@@ -5,11 +5,11 @@ import subprocess
 import base64
 from itertools import batched
 
-def sendMessage(url, count='', chrunk='', messageToSend=''):
+def sendMessage(url, count='', chunk='', messageToSend=''):
     if count:
         content = str(count)
-    elif chrunk:
-        content = str(chrunk)
+    elif chunk:
+        content = str(chunk)
     elif messageToSend:
         content = str(messageToSend)
     else:
@@ -24,14 +24,14 @@ def launchCommand(command):
                             universal_newlines=True,
                             stdout=subprocess.PIPE)
     return(result.returncode, result.stdout)
-def sendChrunkedMessage(url, dataToChrunk):
-    size = int((len(dataToChrunk)/2000)+1)
+def sendChunkedMessage(url, dataToChunk):
+    size = int((len(dataToChunk)/2000)+1)
     sendMessage(url, count=size)
 
-    chrunk = list(batched(str(dataToChrunk), 2000))
-    for i in range(0, len(chrunk)):
-        string = ''.join(chrunk[i])
-        sendMessage(url, chrunk=string)
+    chunk = list(batched(str(dataToChunk), 2000))
+    for i in range(0, len(chunk)):
+        string = ''.join(chunk[i])
+        sendMessage(url, chunk=string)
 def encodeFile(providedFile):
     with open(providedFile, "rb") as img_file:
         my_string = base64.b64encode(img_file.read())
@@ -56,4 +56,4 @@ if __name__ == '__main__':
     elif sys.argv[1] == "-f":
         for i in range(2, len(sys.argv)):
             encodedFile = encodeFile(sys.argv[i])
-            sendChrunkedMessage(webHook, encodedFile)
+            sendChunkedMessage(webHook, encodedFile)
