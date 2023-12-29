@@ -1,0 +1,170 @@
+CompileCommand: exclude com/intellij/openapi/vfs/impl/FilePartNodeRoot.trieDescend bool exclude = true
+2023-12-29 14:17:50,358 [    422]   WARN - #c.i.s.ComponentManagerImpl - `preload=true` must be used only for core services (service=com.jetbrains.rdserver.statistics.BackendStatisticsManager, plugin=com.jetbrains.codeWithMe)
+2023-12-29 14:17:50,980 [   1044]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.psi.search.FilenameIndex initializer requests com.intellij.ide.plugins.PluginUtil instance
+2023-12-29 14:17:51,170 [   1234]   WARN - #c.i.i.u.l.LafManagerImpl - VersionControl.Log.Commit.rowHeight = null in LookAndFeelThemeAdapter; it may lead to performance degradation
+2023-12-29 14:17:51,272 [   1336]   WARN - #c.i.e.t.TargetBasedSdks - SDK target configuration data is absent
+2023-12-29 14:17:51,302 [   1366]   WARN - #c.i.e.t.TargetBasedSdks - SDK target configuration data is absent
+2023-12-29 14:17:51,337 [   1401]   WARN - #c.i.e.t.TargetBasedSdks - SDK target configuration data is absent
+2023-12-29 14:17:51,359 [   1423]   WARN - #c.i.e.t.TargetBasedSdks - SDK target configuration data is absent
+2023-12-29 14:17:51,748 [   1812]   WARN - #c.i.o.v.n.p.d.e.DurableEnumeratorFactory - [enumerator.mmapped]: .valueToId map is out-of-sync with .valuesLog data -> rebuilding it
+2023-12-29 14:17:51,935 [   1999]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.psi.LanguageSubstitutors initializer requests com.intellij.psi.LanguageSubstitutors instance
+2023-12-29 14:17:51,961 [   2025]   WARN - #c.i.s.ComponentManagerImpl - org.zmlx.hg4idea.provider.HgChangeProvider initializer requests com.intellij.openapi.vcs.FileStatusFactory instance
+2023-12-29 14:17:52,936 [   3000]   WARN - #c.i.i.s.i.StartupManagerImpl - Migrate com.jetbrains.python.index.PyPackageManagerActivity to ProjectActivity [Plugin: com.jetbrains.python.sharedIndexes.downloadable]
+com.intellij.diagnostic.PluginException: Migrate com.jetbrains.python.index.PyPackageManagerActivity to ProjectActivity [Plugin: com.jetbrains.python.sharedIndexes.downloadable]
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:277)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:69)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invokeSuspend(StartupManagerImpl.kt:192)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3.invokeSuspend(StartupManagerImpl.kt:191)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2023-12-29 14:17:53,833 [   3897]   WARN - #o.j.p.t.TextMateService - Cannot find referenced file `./language-configuration.json` in bundle `/usr/bin/pycharm-community-2023.3.2/plugins/textmate/lib/bundles/mdx`
+2023-12-29 14:17:54,098 [   4162]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.ui.jcef.JBCefApp$Holder initializer requests com.intellij.ui.jcef.JBCefAppCache instance
+2023-12-29 14:17:54,405 [   4469]   WARN - #c.i.o.a.i.ActionUpdater - 1639 ms to grab EDT for ToolWindowHeader$2#Update@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
+
+(java:112209): Gtk-WARNING **: 14:17:54.464: gtk_disable_setlocale() must be called before gtk_init()
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+2023-12-29 14:17:54,748 [   4812]   WARN - #c.i.o.a.i.ActionUpdater - 519 ms to grab EDT for ChangePreviewLayoutAction$EditorOnly#Update@ContextToolbar (org.intellij.plugins.markdown.ui.actions.ChangePreviewLayoutAction$EditorOnly)
+2023-12-29 14:17:54,749 [   4813]   WARN - #c.i.o.a.i.ActionUpdater - 521 ms to grab EDT for ChangePreviewLayoutAction$PreviewOnly#Update@ContextToolbar (org.intellij.plugins.markdown.ui.actions.ChangePreviewLayoutAction$PreviewOnly)
+2023-12-29 14:17:54,749 [   4813]   WARN - #c.i.o.a.i.ActionUpdater - 520 ms to grab EDT for ChangePreviewLayoutAction$EditorAndPreview#Update@ContextToolbar (org.intellij.plugins.markdown.ui.actions.ChangePreviewLayoutAction$EditorAndPreview)
+2023-12-29 14:17:54,813 [   4877]   WARN - #c.i.o.a.i.ActionUpdater - 406 ms to grab EDT for ToolWindowHeader$2#GetChildren@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
+2023-12-29 14:17:56,255 [   6319]   WARN - #c.i.s.ComponentManagerImpl - com.jetbrains.python.PyElementTypes initializer requests com.jetbrains.python.PyElementTypesFacade instance
+CompileCommand: exclude com/intellij/openapi/vfs/impl/FilePartNodeRoot.trieDescend bool exclude = true
+2023-12-29 14:22:28,680 [    402]   WARN - #c.i.s.ComponentManagerImpl - `preload=true` must be used only for core services (service=com.jetbrains.rdserver.statistics.BackendStatisticsManager, plugin=com.jetbrains.codeWithMe)
+2023-12-29 14:22:29,336 [   1058]   WARN - #c.i.i.u.l.LafManagerImpl - VersionControl.Log.Commit.rowHeight = null in LookAndFeelThemeAdapter; it may lead to performance degradation
+2023-12-29 14:22:29,453 [   1175]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.psi.search.FilenameIndex initializer requests com.intellij.ide.plugins.PluginUtil instance
+2023-12-29 14:22:29,687 [   1409]   WARN - #c.i.e.t.TargetBasedSdks - SDK target configuration data is absent
+2023-12-29 14:22:29,726 [   1448]   WARN - #c.i.e.t.TargetBasedSdks - SDK target configuration data is absent
+2023-12-29 14:22:29,775 [   1497]   WARN - #c.i.e.t.TargetBasedSdks - SDK target configuration data is absent
+2023-12-29 14:22:29,801 [   1523]   WARN - #c.i.e.t.TargetBasedSdks - SDK target configuration data is absent
+2023-12-29 14:22:30,094 [   1816]   WARN - #c.i.o.v.n.p.d.e.DurableEnumeratorFactory - [enumerator.mmapped]: .valueToId map is out-of-sync with .valuesLog data -> rebuilding it
+2023-12-29 14:22:30,403 [   2125]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.psi.LanguageSubstitutors initializer requests com.intellij.psi.LanguageSubstitutors instance
+2023-12-29 14:22:30,440 [   2162]   WARN - #c.i.s.ComponentManagerImpl - org.zmlx.hg4idea.provider.HgChangeProvider initializer requests com.intellij.openapi.vcs.FileStatusFactory instance
+2023-12-29 14:22:30,876 [   2598]   WARN - #o.j.p.t.TextMateService - Cannot find referenced file `./language-configuration.json` in bundle `/usr/bin/pycharm-community-2023.3.2/plugins/textmate/lib/bundles/mdx`
+2023-12-29 14:22:32,052 [   3774]   WARN - #c.i.o.a.i.ActionUpdater - 422 ms to grab EDT for ToolWindowHeader$2#GetChildren@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
+2023-12-29 14:22:32,587 [   4309]   WARN - #c.i.i.s.i.StartupManagerImpl - Migrate com.jetbrains.python.index.PyPackageManagerActivity to ProjectActivity [Plugin: com.jetbrains.python.sharedIndexes.downloadable]
+com.intellij.diagnostic.PluginException: Migrate com.jetbrains.python.index.PyPackageManagerActivity to ProjectActivity [Plugin: com.jetbrains.python.sharedIndexes.downloadable]
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:277)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:69)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invokeSuspend(StartupManagerImpl.kt:192)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3.invokeSuspend(StartupManagerImpl.kt:191)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2023-12-29 14:24:37,860 [ 129582]   WARN - #c.i.s.ComponentManagerImpl - com.jetbrains.python.PyElementTypes initializer requests com.jetbrains.python.PyElementTypesFacade instance
+2023-12-29 14:29:26,917 [ 418639]   WARN - #c.i.o.v.c.ChangeListManagerImpl - Local changes overwritten
+2023-12-29 14:32:46,770 [ 618492]   WARN - #c.i.o.a.ActionStub - ActionGroup should be registered using <group> tag: id="WelcomeScreen.CreateDirectoryProject" class="com.jetbrains.python.newProject.steps.PyCharmNewProjectStep"
+2023-12-29 14:32:50,739 [ 622461]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.ui.jcef.JBCefApp$Holder initializer requests com.intellij.ui.jcef.JBCefAppCache instance
+
+(java:112746): Gtk-WARNING **: 14:32:50.998: gtk_disable_setlocale() must be called before gtk_init()
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+2023-12-29 14:33:24,497 [ 656219]   WARN - #c.i.o.v.ExternallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:33:24,523 [ 656245]   WARN - #c.i.o.v.ProjectConfigurationFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:33:24,532 [ 656254]   WARN - #git4idea.commands.GitHandler - Cannot start process, the working directory '/home/jconnor/PycharmProjects/c2cDiscord' does not exist
+com.intellij.execution.WorkingDirectoryNotFoundException: Cannot start process, the working directory '/home/jconnor/PycharmProjects/c2cDiscord' does not exist
+	at com.intellij.execution.configurations.GeneralCommandLine.validateAndPrepareCommandLine(GeneralCommandLine.java:379)
+	at com.intellij.execution.configurations.GeneralCommandLine.createProcess(GeneralCommandLine.java:346)
+	at com.intellij.execution.process.OSProcessHandler.startProcess(OSProcessHandler.java:84)
+	at com.intellij.execution.process.OSProcessHandler.<init>(OSProcessHandler.java:44)
+	at com.intellij.execution.process.KillableProcessHandler.<init>(KillableProcessHandler.java:41)
+	at com.intellij.execution.process.KillableProcessHandler.<init>(KillableProcessHandler.java:55)
+	at git4idea.commands.GitTextHandler$MyOSProcessHandler.<init>(GitTextHandler.java:146)
+	at git4idea.commands.GitLineHandler$1.<init>(GitLineHandler.java:143)
+	at git4idea.commands.GitLineHandler.createProcess(GitLineHandler.java:143)
+	at git4idea.commands.GitTextHandler.startProcess(GitTextHandler.java:76)
+	at git4idea.commands.GitHandler.start(GitHandler.java:465)
+	at git4idea.commands.GitHandler.runInCurrentThread(GitHandler.java:403)
+	at git4idea.commands.GitImplBase.doRun(GitImplBase.java:194)
+	at git4idea.commands.GitImplBase.run(GitImplBase.java:158)
+	at git4idea.commands.GitImplBase.runCommand(GitImplBase.java:63)
+	at git4idea.util.GitFileUtils.doDelete(GitFileUtils.java:69)
+	at git4idea.util.GitFileUtils.deletePaths(GitFileUtils.java:48)
+	at git4idea.vfs.GitVFSListener.executeDeletion(GitVFSListener.java:237)
+	at git4idea.vfs.GitVFSListener$3.execute(GitVFSListener.java:140)
+	at git4idea.vfs.GitVFSListener$5.lambda$run$0(GitVFSListener.java:293)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at git4idea.vfs.GitVFSListener$5.run(GitVFSListener.java:291)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.startTask(CoreProgressManager.java:434)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.startTask(ProgressManagerImpl.java:132)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcessWithProgressAsynchronously$5(CoreProgressManager.java:484)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$submit$4(ProgressRunner.java:248)
+	at com.intellij.openapi.progress.ProgressManager.lambda$runProcess$0(ProgressManager.java:73)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:192)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$12(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:685)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:641)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:609)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:78)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:179)
+	at com.intellij.openapi.progress.ProgressManager.runProcess(ProgressManager.java:73)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$submit$5(ProgressRunner.java:248)
+	at com.intellij.openapi.progress.impl.ProgressRunner$ProgressRunnable.run(ProgressRunner.java:498)
+	at com.intellij.util.concurrency.ChildContext$runAsCoroutine$1.invoke(propagation.kt:81)
+	at com.intellij.util.concurrency.ChildContext$runAsCoroutine$1.invoke(propagation.kt:81)
+	at com.intellij.util.concurrency.ChildContext.runAsCoroutine(propagation.kt:86)
+	at com.intellij.util.concurrency.ChildContext.runAsCoroutine(propagation.kt:81)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$launchTask$18(ProgressRunner.java:464)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:702)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:699)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:699)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2023-12-29 14:33:24,782 [ 656504]   WARN - #c.i.o.v.ExternallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:33:46,008 [ 677730]   WARN - #c.i.o.v.ExternallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:33:46,310 [ 678032]   WARN - #c.i.o.v.ExternallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:33:46,859 [ 678581]   WARN - github - Failed to create GitHub Repository; 
+java.lang.NullPointerException
+	at org.jetbrains.plugins.github.GHShareProjectUtil$shareProjectOnGithub$1.run(GHShareProjectUtil.kt:151)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.startTask(CoreProgressManager.java:434)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.startTask(ProgressManagerImpl.java:132)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcessWithProgressAsynchronously$5(CoreProgressManager.java:484)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$submit$4(ProgressRunner.java:248)
+	at com.intellij.openapi.progress.ProgressManager.lambda$runProcess$0(ProgressManager.java:73)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:192)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$12(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:685)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:641)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:609)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:78)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:179)
+	at com.intellij.openapi.progress.ProgressManager.runProcess(ProgressManager.java:73)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$submit$5(ProgressRunner.java:248)
+	at com.intellij.openapi.progress.impl.ProgressRunner$ProgressRunnable.run(ProgressRunner.java:498)
+	at com.intellij.util.concurrency.ChildContext$runAsCoroutine$1.invoke(propagation.kt:81)
+	at com.intellij.util.concurrency.ChildContext$runAsCoroutine$1.invoke(propagation.kt:81)
+	at com.intellij.util.concurrency.ChildContext.runAsCoroutine(propagation.kt:86)
+	at com.intellij.util.concurrency.ChildContext.runAsCoroutine(propagation.kt:81)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$launchTask$18(ProgressRunner.java:464)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:702)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:699)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:699)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2023-12-29 14:34:10,242 [ 701964]   WARN - #c.i.o.v.ExternallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:34:11,393 [ 703115]   WARN - #c.i.o.v.ExternallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:34:41,987 [ 733709]   WARN - #c.i.o.v.ExternallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:34:42,300 [ 734022]   WARN - #c.i.o.v.ExternallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:34:57,505 [ 749227]   WARN - #c.i.o.v.ExternallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:35:43,227 [ 794949]   WARN - #c.i.o.v.ExternallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project c2cDiscord
+2023-12-29 14:35:59,774 [ 811496]   WARN - #c.i.w.i.i.l.m.ModuleBridgeLoaderService - Loaded from cache, but no serialized modules found. Workspace model cache will be ignored, project structure will be recreated.
+2023-12-29 14:37:44,512 [ 916234]   WARN - #c.i.u.x.Binding - no accessors for com.intellij.openapi.projectRoots.Sdk
