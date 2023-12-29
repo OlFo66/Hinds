@@ -7,14 +7,11 @@
 <hr/>
 
 ## :warning: Disclaimer :warning:
-:warning:️<br>
 :warning:Alfred is for educational purpose only!<br>
 :warning:️I am not responsible for any damage caused by the usage of this tool.<br>
-:warning:
-️
-# What ?
-alfred.py is a data evasion tool using Discord channel webhook to send information.
-# How?
+# What?
+alfred.py is a data evasion tool using Discord channel webhook.
+# How to use it?
 * Rename .webhook.sample by .webhook & modify it to add the url of the channel's webhook you'll use.
 * You can call the script with 2 options:
   * -f \<FULLPATH/FILENAME2> \<FULLPATH/FILENAME2> ... : will send base64 encoded filename1, filename2, etc.
